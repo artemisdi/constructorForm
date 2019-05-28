@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Конструктор</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="moving-form" id="movingForm">
+    <div class="moving-form__closed" id="movingFormClosed">
+        <span><i class="fa fa-times" aria-hidden="true"></i></span>
+    </div>
+    <div class="moving-form__settings" id="formSettings">
+        <div class="moving-form__settings-header">
+
+        </div>
+        <div class="moving-form__settings-body">
+
+        </div>
+    </div>
+</div>
+<div class="window-modal">
+    <div class="modal" id="modal">
+        <div class="modal-body" id="modalBody">
+            <div class="modal-body__closed" id="closedModal">
+                <span><i class="fa fa-times" aria-hidden="true"></i></span></div>
+            <div class="modal-body__header">
+                <span id="modalHeader"></span>
+            </div>
+            <div class="modal-body__body">
+                <span id="modalBodyText"></span>
+            </div>
+            <div class="modal-body__footer">
+                <div id="backwardText"><span><i class="fa fa-backward" aria-hidden="true"></i></span></div>
+                <div><span id="counter"></span></div>
+                <div id="forwardsText"><span><i class="fa fa-forward" aria-hidden="true"></i></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="constructor">
+    <div class="constructor__header" id="constructorHeader">
+        <div>
+            <div class="user-forms" onclick="addUserForms()">
+                <span><i class="fa fa-users" aria-hidden="true"></i></span>
+                <span>user forms</span>
+            </div>
+        </div>
+        <div>
+            <div class="block-list__user-form"></div>
+        </div>
+    </div>
+    <div class="constructor__body" id="constructorBody">
+        <div class="constructor__body-element" id="constructorBodyEl">
+            <div class="header body-but">
+                <span><i class="fa fa-header" aria-hidden="true"></i></span>
+                <span>label</span>
+            </div>
+            <div class="text body-but">
+                <span><i class="fa fa-font" aria-hidden="true"></i></span>
+                <span>Text</span>
+            </div>
+            <div class="password body-but">
+                <span><i class="fa fa-key" aria-hidden="true"></i></span>
+                <span>Password</span>
+            </div>
+            <div class="email body-but">
+                <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                <span>Email</span>
+            </div>
+            <div class="radio body-but">
+                <span><i class="fa fa-circle-thin" aria-hidden="true"></i></span>
+                <span>Radio</span>
+            </div>
+            <div class="checkbox body-but">
+                <span><i class="fa fa-check-square-o" aria-hidden="true"></i></span>
+                <span>Checkbox</span>
+            </div>
+            <div class="select body-but">
+                <span><i class="fa fa-list" aria-hidden="true"></i></span>
+                <span>Select</span>
+            </div>
+            <div class="submit body-but">
+                <span><i class="fa fa-cube" aria-hidden="true"></i></span>
+                <span>Button</span>
+            </div>
+        </div>
+        <div class="constructor__body-zone" id="constructor">
+            <div class="constructor__body-zone-form" id="constructorZone">
+                <div class="header-form" id="headerForm">
+                    <div class="text header-form__settings header-text">
+                        <h1 class="save-name-form header-text" ondblclick="addBlockSettingsStyle(event)">Новая
+                            форма</h1>
+                    </div>
+                    <div id="saveForm" class="save-form"><span><i class="fa fa-floppy-o" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="constructor__body-settings">
+            <div class="constructor__body-settings__zone">
+                <div class="settings-closed"><span onclick="closeBlockSettingsStyle()">
+                    <i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                </div>
+                <div class="settings__zone__header"></div>
+                <div class="settings__zone__body"></div>
+                <div class="settings__zone__footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
